@@ -99,6 +99,11 @@ else
 		fprintf(gp,'\nset term pop\n');
 		if plotit == 1
 			fprintf(2,'WARNING: No image file!');
+        end
+    case 'aqua'
+		fprintf(gp,'\nset term pop\n');
+		if plotit == 1
+			fprintf(2,'WARNING: No image file!');
 		end
 	case 'wxt'
 		fprintf(gp,'\nset term pop\n');

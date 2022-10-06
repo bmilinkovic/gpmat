@@ -22,7 +22,7 @@ if xterm
 	screensize = gp_screensize.pixels./gp_screensize.dpi; % inches
 else
 	switch term
-		case {'x11', 'png','svg','wxt','qt', 'aqua'}, screensize = gp_screensize.pixels;
+		case {'x11', 'png','svg','wxt','qt','aqua'}, screensize = gp_screensize.pixels;
 		case {'eps','pdf','pdfc','pdfx'    }, screensize = gp_screensize.pixels./gp_screensize.dpi; % inches
 		otherwise, error('Bad terminal specification');
 	end
